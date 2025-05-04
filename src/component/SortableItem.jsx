@@ -54,7 +54,7 @@ const SortableItem = ({id, handleEditeTranslate, deleteKeywordHandler}) => {
             style={style}
             {...attributes}
             {... isEdite || role === 'admin' && listeners}
-            className={`flex justify-between items-center bg-gray-100 rounded-lg shadow-sm p-3 my-2 ${role === 'admin' && 'cursor-grab'}`}
+            className={`flex justify-between items-center bg-gray-100 rounded-lg shadow-sm p-3 my-2 max-md:flex-col gap-12 ${role === 'admin' && 'cursor-grab'}`}
         >
       <span className="flex items-center gap-2 text-sm font-medium text-gray-700">
         {role === "admin" && (

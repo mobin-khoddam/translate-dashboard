@@ -86,7 +86,7 @@ const TranslationManager = () => {
     }, [languageValidation, translateLang]);
 
     return (
-        <div style={{maxWidth: "400px", margin: "50px auto"}}>
+        <div className='max-w-2xl' style={{margin: "50px auto"}}>
             <input
                 defaultValue={currentLang}
                 onChange={(e) => setTranslateLangHandler(e.target.value)}
